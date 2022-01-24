@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Shortener
+        </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css"> 
+    </head>
+    <body>
+        <h1>URL SHORTENER</h1>
+        <div class=accent-body>
+            <form method="POST" action='result/'>
+                {% csrf_token %}
+                {{form}}
+                <p>
+                <input type="submit" value="Shortify!" class='buttons'></p>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Result
+        </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css"> 
+    </head>
+    <body>
+        <h1>URL SHORTENER</h1>
+        <div class=accent-body>
+            {% csrf_token %}
+            Url: <span>{{long}}</span>
+            <p>Shortened Url: <span><a href={{short}}>{{short}}</a></span></p>
+        </div>
+
+    </body>
+</html>

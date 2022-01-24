@@ -1,0 +1,53 @@
+body{
+    background-color:darkslategray;
+    color:white;
+}
+h1{
+    color:white;
+    text-align: center;
+    margin:auto;
+    font-size: 60;
+    text-shadow: 1px 1px rgb(112, 111, 111);
+}
+.accent-body{
+    background-color: rgb(79, 157, 105);
+    width: fit-content;
+    margin: auto;
+    margin-top: 70px;
+    height: auto;
+    padding: 20px 30px;
+    color: rgb(223, 217, 226);
+    text-align: center;
+    font-size: 30px;
+    border-style:groove;
+    border-radius: 10px;
+}
+.accent-body input[type=url]{
+    width: 400px;
+    font-size: 20px;
+}
+.accent-body input[type=url]:hover{
+    border-color: darkslategray;
+}
+.accent-body input[type=submit]{
+    background-color: darkslategray;
+    color: rgb(223, 217, 226);
+    padding: 10px 20px ;
+    font-size: 20px;
+}
+.accent-body input[type=submit]:hover{
+    background-color: rgb(60, 99, 99);
+}
+
+.accent-body a:hover{
+    color:rgb(35, 92, 92);
+}
+.accent-body span{
+    color:rgb(24, 63, 63);
+}
+
+.subtitle{
+    font-size: large;
+    margin: auto;
+    text-align: center;
+}

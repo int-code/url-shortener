@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css"> 
+    </head>
+    <body>
+        <h1>URL SHORTENER</h1>
+        <div class='subtitle'>This is an url shortener designed to shorten lengthy urls</div>
+            <form action='shortener/' class='accent-body'>
+                <input type="submit" value="Let's Start!">
+            </form>
+    </body>
+</html>
