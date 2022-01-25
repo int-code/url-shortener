@@ -1,1 +1,1 @@
-web: gunicorn urlshortener.urlshortener.wsgi
+web: gunicorn --bind 0.0.0.0:$PORT urlshortener.urlshortener.wsgi
