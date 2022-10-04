@@ -6,7 +6,6 @@ _Welcome fellow hackers to Hacktoberfest 2022! Before you start contributing wit
 
 1. [Fork](https://github.com/int-code/url-shortener/fork) and clone the repository
 2. Create a new branch: `git checkout -b my-branch-name`
-3. Add a file with your name in the contributions folder telling about your contributions and also link that file in the readme
 5. Push to your fork and [submit a pull request](https://github.com/int-code/url-shortener/compare)
 6. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
