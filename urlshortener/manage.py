@@ -2,10 +2,18 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import dotenv
+import pathlib
 
 
 def main():
     """Run administrative tasks."""
+
+    DOT_ENV_PATH = pathlib.Path(__file__).parent.absolute().parent.absolute() / '.env'
+    if DOT_ENV_PATH.exists():
+        dotenv.read_dotenv(str(DOT_ENV_PATH))
+        
+   
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'urlshortener.settings')
     try:
         from django.core.management import execute_from_command_line
