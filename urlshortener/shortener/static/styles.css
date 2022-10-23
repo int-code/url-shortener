@@ -1,16 +1,27 @@
 body{
-    background-color:darkslategray;
-    color:white;
+    
+    color:#DEF2F1;
+    font-family: Georgia, serif;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    background: linear-gradient(to right, #235c5a, #56ccc6);
+    text-shadow: 1px 1px #041014;    
 }
+
 h1{
-    color:white;
+    color:#17252A;
     text-align: center;
     margin:auto;
     font-size: 60;
-    text-shadow: 1px 1px rgb(112, 111, 111);
+    text-shadow: 1px 1px #d6e3e2;
+    text-shadow: #358481;
+    font-stretch: ultra-expanded;
+    font-weight: bolder;
+    
 }
+
 .accent-body{
-    background-color: rgb(79, 157, 105);
+    
     width: fit-content;
     margin: auto;
     margin-top: 70px;
@@ -21,33 +32,52 @@ h1{
     font-size: 30px;
     border-style:groove;
     border-radius: 10px;
+    box-shadow: 2px 2px #17252A ;
+    background: linear-gradient(#3AAFA9, #2B7A78);
 }
+
 .accent-body input[type=url]{
     width: 400px;
     font-size: 20px;
 }
+
 .accent-body input[type=url]:hover{
-    border-color: darkslategray;
+    border-color: #141850;
 }
+
 .accent-body input[type=submit]{
-    background-color: darkslategray;
-    color: rgb(223, 217, 226);
+    background-color:#0F2925;
+    color: #CCCCCC;
     padding: 10px 20px ;
     font-size: 20px;
+    border-radius: 12px;
+    
 }
+
 .accent-body input[type=submit]:hover{
-    background-color: rgb(60, 99, 99);
+    background-color: #DEF2F1;
+    color:#041014;
+    cursor: pointer;
+
+}
+
+.accent-body a{
+    color:#092834;
 }
 
 .accent-body a:hover{
-    color:rgb(35, 92, 92);
+    color:#1d5652;
 }
 .accent-body span{
-    color:rgb(24, 63, 63);
+    color:#041014;
 }
 
 .subtitle{
     font-size: large;
     margin: auto;
     text-align: center;
+    font-weight: bold;
+    color: #DEF2F1;
+    text-shadow: 1px 1px #17252A;
+    
 }
