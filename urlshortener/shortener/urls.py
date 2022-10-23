@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.home),
     path('shortener/', views.short),
     path('shortener/result/', views.res),
-    path('<str:key>', views.direction)
+    path('url/<str:key>', views.direction)
 ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
