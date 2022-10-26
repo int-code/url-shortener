@@ -16,16 +16,21 @@ def short(Request):
 def res(Request):
     if(Request.method=='POST'):
         form = url_Form(Request.POST)
-        a=''
+        a=long=''
         if form.is_valid():
-            entry = form.save(commit=False)
-            long = entry.long_url
-            temp = get_zipped()
-            while url_Model.objects.filter(pk=temp).exists():
+            if not(url_Model.objects.filter(long_url=form.cleaned_data['long_url']).exists()):
+                entry = form.save(commit=False)
+                long = entry.long_url
                 temp = get_zipped()
-            entry.short_url = temp
-            a = 'http://127.0.0.1:8000/'+entry.short_url
-            entry.save()
+                while url_Model.objects.filter(pk=temp).exists():
+                    temp = get_zipped()
+                entry.short_url = temp
+                a = 'http://127.0.0.1:8000/url/'+entry.short_url
+                entry.save()
+            else:
+                short_url=url_Model.objects.get(long_url=form.cleaned_data['long_url'])
+                a='http://127.0.0.1:8000/url/'+short_url.short_url
+                long=short_url.long_url
         context = {'long':long, 'short': a}
         
     return render(Request, 'result.html', context)
