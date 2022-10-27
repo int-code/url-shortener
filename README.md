@@ -1,9 +1,12 @@
-# url-shortener
-Django based link shortener
+# <p align="center"> __url-shortener__
+__This is a Django based link shortener.__ 
+
+---
 
 ## Installation
 
 path: /home/username/url-shortener
+
 ### virtualenv
 Download virtualenv from [here](https://pypi.org/project/virtualenv/) and install it.
 ```
@@ -11,7 +14,7 @@ virtualenv env
 source env/bin/activate
 ```
 
-### Requirements
+### Requirements: 
 ```
 pip install -r requirements.txt
 ```
