@@ -1,7 +1,7 @@
 # <p align="center"> __url-shortener__
 __This is a Django based link shortener.__ 
 
----
+-------
 
 ## Installation
 
